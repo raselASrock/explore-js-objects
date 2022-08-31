@@ -29,3 +29,10 @@ console.log(result2);
 
 const badamMoney = kodomAli.treatDe.call(badamAli, 400, 50)
 console.log(badamMoney);
+
+const badamMoney2 = kodomAli.treatDe.apply(badamAli, [1000, 100])
+console.log(badamMoney2);
+
+const badamAliTreat = kodomAli.treatDe.bind(badamAli);
+const remaining = badamAliTreat(1000, 100);
+console.log(remaining);
