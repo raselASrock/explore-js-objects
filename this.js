@@ -43,3 +43,7 @@ badamAli.exam()
 function clickHandler(){
     console.log('inside click handler', this);
 }
+
+document.getElementById('btn-click-2').addEventListener('click', function(){
+    console.log(this);
+})
